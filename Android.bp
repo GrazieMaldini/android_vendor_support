@@ -1,12 +1,6 @@
 android_library {
 
-    name: "VendorSupport-preference",
-
-    optimize: {
-        enabled: false,
-    },
-
-    srcs: ["src/**/*.java"],
+    name: "VendorSupport-Libs",
 
     static_libs: [
         "androidx.core_core",
@@ -16,5 +10,7 @@ android_library {
     ],
 
     resource_dirs: ["res"],
+    srcs: ["src/**/*.java"],
+    min_sdk_version: "21",
 
 }
